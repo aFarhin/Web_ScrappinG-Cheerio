@@ -54,7 +54,7 @@ function getDev(error, data) {
 
         const user_name = $(el).find(".f4 a").text().trim();
 
-        const repo = $(el).find('h1 a').attr('href');
+        const repo = $(el).find('h1.h4 a').text().trim();
 
         dev_repo.push({ name, description, user_name, repo });
 
